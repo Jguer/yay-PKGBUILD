@@ -27,7 +27,7 @@ echo "Processing yay"
   makepkg
   makepkg --printsrcinfo >.SRCINFO
   git commit -a -S -m "$newV"
-  # git push
+  git push
 )
 
 echo "Processing yay-bin"
@@ -41,7 +41,7 @@ echo "Processing yay-bin"
   makepkg
   makepkg --printsrcinfo >.SRCINFO
   git commit -a -S -m "$newV"
-  # git push
+  git push
 )
 
 echo "Processing yay-git"
@@ -53,5 +53,5 @@ echo "Processing yay-git"
   makepkg
   makepkg --printsrcinfo >.SRCINFO
   git commit -a -S -m "$newV"
-  # git push
+  git push
 )

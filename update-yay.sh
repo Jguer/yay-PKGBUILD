@@ -16,6 +16,7 @@ if [ $# = 0 ]; then
 fi
 
 newV="$1"
+set -e
 echo "Processing yay"
 (
   cd yay || exit

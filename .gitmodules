@@ -1,9 +1,12 @@
-[submodule "yay-git"]
-	path = yay-git
-	url = ssh://aur@aur.archlinux.org/yay-git.git
 [submodule "yay"]
 	path = yay
 	url = ssh://aur@aur.archlinux.org/yay.git
+	branch = master
+[submodule "yay-git"]
+	path = yay-git
+	url = ssh://aur@aur.archlinux.org/yay-git.git
+	branch = master
 [submodule "yay-bin"]
 	path = yay-bin
 	url = ssh://aur@aur.archlinux.org/yay-bin.git
+	branch = master

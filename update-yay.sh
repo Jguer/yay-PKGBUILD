@@ -20,29 +20,29 @@ set -e
 echo "Processing yay"
 (
   cd yay || exit
-  git checkout .
+  # git checkout .
   git clean -fdx
-  git pull
+  # git pull
   sed -i "s/pkgver=.*/pkgver=$newV/g" PKGBUILD
   updpkgsums PKGBUILD
   makepkg
   makepkg --printsrcinfo >.SRCINFO
-  git commit -a -S -m "$newV"
-  git push
+  #git commit -a -S -m "$newV"
+  #git push
 )
 
 echo "Processing yay-bin"
 (
   cd yay-bin || exit
-  git checkout .
+  # git checkout .
   git clean -fdx
-  git pull
+  # git pull
   sed -i "s/pkgver=.*/pkgver=$newV/g" PKGBUILD
   updpkgsums PKGBUILD
   makepkg
   makepkg --printsrcinfo >.SRCINFO
-  git commit -a -S -m "$newV"
-  git push
+  #git commit -a -S -m "$newV"
+  #git push
 )
 
 echo "Processing yay-git"
@@ -50,9 +50,9 @@ echo "Processing yay-git"
   cd yay-git || exit
   git checkout .
   git clean -fdx
-  git pull
+  # git pull
   makepkg
   makepkg --printsrcinfo >.SRCINFO
-  git commit -a -S -m "$newV"
-  git push
+  #git commit -a -S -m "$newV"
+  #git push
 )

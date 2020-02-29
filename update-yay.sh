@@ -53,6 +53,7 @@ echo "Processing yay-git"
   # git pull
   makepkg
   makepkg --printsrcinfo >.SRCINFO
-  #git commit -a -S -m "$newV"
   #git push
 )
+
+git commit -a -S -m "$newV"

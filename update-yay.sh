@@ -48,7 +48,7 @@ echo "Processing yay-bin"
 echo "Processing yay-git"
 (
   cd yay-git || exit
-  git checkout .
+  # git checkout .
   git clean -fdx
   # git pull
   makepkg

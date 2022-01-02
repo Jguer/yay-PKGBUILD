@@ -1,0 +1,22 @@
+pkgbase = linux-firmware-chromiumos-git
+	pkgdesc = Firmware files for Linux
+	pkgver = 20211206.7239cde5
+	pkgrel = 1
+	url = https://chromium.googlesource.com/chromiumos/third_party/linux-firmware.git;a=summary
+	arch = any
+	license = GPL2
+	license = GPL3
+	license = custom
+	makedepends = git
+	options = !strip
+	source = linux-firmware-chromiumos-git::git+https://chromium.googlesource.com/chromiumos/third_party/linux-firmware.git
+	sha256sums = SKIP
+
+pkgname = linux-firmware-chromiumos-git
+	provides = linux-firmware=20211206.7239cde5
+	conflicts = linux-firmware
+
+pkgname = amd-ucode-git
+	pkgdesc = Microcode update files for AMD CPUs
+	provides = amd-ucode=20211206.7239cde5
+	conflicts = amd-ucode

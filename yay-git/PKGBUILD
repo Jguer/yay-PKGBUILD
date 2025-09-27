@@ -2,10 +2,10 @@
 # Maintainer: Jguer <pkgbuilds at jguer.space>
 pkgname="yay-git"
 _pkgname="yay"
-pkgver=12.2.0.r0.gcb4cd7b
+pkgver=12.5.1.r0.g60b7f639
 pkgrel=1
 pkgdesc="Yet another yogurt. Pacman wrapper and AUR helper written in go. (development version)"
-arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv7h' 'armv6h' 'aarch64' 'riscv64', 'powerpc64le')
+arch=('i686' 'pentium4' 'x86_64' 'arm' 'armv7h' 'armv6h' 'aarch64' 'riscv64' 'powerpc64le')
 url="https://github.com/Jguer/yay"
 license=('GPL3')
 depends=(
@@ -16,7 +16,7 @@ optdepends=(
   'sudo: privilege elevation'
   'doas: privilege elevation'
 )
-makedepends=('go>=1.19')
+makedepends=('go>=1.24')
 options=(!lto)
 conflicts=('yay')
 provides=('yay')

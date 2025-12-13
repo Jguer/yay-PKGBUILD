@@ -56,4 +56,4 @@ echo "Processing yay-git"
   #git push
 )
 
-git commit -a -S -m "$newV"
+git commit -a -m "$newV"

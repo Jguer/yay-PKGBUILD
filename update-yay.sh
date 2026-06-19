@@ -50,6 +50,8 @@ echo "Processing yay-git"
   cd yay-git || exit
   # git checkout .
   git clean -fdx
+  rm -rf yay-git/src
+  rm -rf yay-git/yay
   # git pull
   makepkg
   makepkg --printsrcinfo >.SRCINFO

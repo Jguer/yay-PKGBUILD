@@ -57,3 +57,5 @@ echo "Processing yay-git"
 )
 
 git commit -a -m "$newV"
+# to avoid yay v13.0.1 merge sphagetti again
+git push
